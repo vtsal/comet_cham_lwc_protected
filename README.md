@@ -18,7 +18,7 @@ c. Run LWC_TB as normal using pdiShared.txt, sdiShared.txt, and the normal do.tx
 
 d. The LWC_TB currently uses fixed data to supply rdi_data for any randomness consumed in the application.
 
-6. To test an implementation using FOBOS:
+5. To test an implementation using FOBOS:
 
 a. Use pdiShared.txt, sdiShared.txt, and do.txt to generate a FOBOS test vector using dinFileTBGenForCOMETLWCProtected.py.
 
