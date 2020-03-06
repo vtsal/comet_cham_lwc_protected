@@ -1,0 +1,13 @@
+-- General use --
+genShared.py should be used to parse an existing set of PDI and SDI test vectors created by cryptotvgen. This script
+does not parse the DO file from the original set. The output files will be called "sharedPDI.txt" and "sharedSDI.txt".
+The script requires a couple input parameters including the number of shares desired (supporting any number
+from 2 to 4) and the I/O width of the PDI and SDI files being parsed. Other input parameters are optional,
+allowing for further specification of the existing test vector files and the desired location of the shared
+output files.
+
+-- Shared test vector generation method --
+The "fixed" input parameter supports a different method to generate the shared test vectors. If the "fixed" parameter
+is set to True, then a single set of masks will be applied across all PDI test vectors and a different set of masks
+will be applied across all SDI test vectors. This parameter defaults to false meaning that each test vector of both
+the PDI and SDI files will have a new set of random masks applied.
